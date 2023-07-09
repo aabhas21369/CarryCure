@@ -18,3 +18,13 @@ All this have been done by using multiple mySQL transaction, there are over 10 t
 We have taken multiple sets of at least two transactions, and made a schedule which is conflict serializable, and for the same schedule, made a schedule which is not a conflict serializable.
 
 The same can be found in schedules.py and explation for the same in readme_schedules.md
+
+Here are some screenshots from the application :-
+
+<img width="1440" alt="Screenshot 2023-07-09 at 7 10 39 PM" src="https://github.com/dwivediishivam/carrycure/assets/97196010/f61c8e16-9771-4212-911f-dd182a980f4a">
+
+<img width="1440" alt="Screenshot 2023-07-09 at 7 10 32 PM" src="https://github.com/dwivediishivam/carrycure/assets/97196010/2d8cbf83-b66c-4aa7-9524-aee5ad740dd4">
+
+<img width="1440" alt="Screenshot 2023-07-09 at 7 10 24 PM" src="https://github.com/dwivediishivam/carrycure/assets/97196010/f3c29551-af37-4230-a2c3-2c0f5d5ee650">
+
+<img width="1440" alt="Screenshot 2023-07-09 at 7 10 19 PM" src="https://github.com/dwivediishivam/carrycure/assets/97196010/9e1d14f9-f60d-4c5c-a84b-8b97a0d8d354">
