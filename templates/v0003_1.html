@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma Application v0.0.0.3</title>
+	<style>
+		body {
+			background-color: #d6b1b1;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: rgb(36, 35, 35);
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+			background-color: rgb(249, 223, 223);
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgb(159, 150, 150);
+		}
+		input[type=text], input[type=number] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px -10px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fefbfb;
+		}
+		input[type=submit] {
+			background-color: rgb(49, 27, 27);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: rgb(89, 77, 77);
+		}
+	</style>
+</head>
+<body>
+	<h1>Pharma Application v0.0.0.3</h1>
+    <center><h3>User Login / Signup</h3></center>
+	<form action="/user_login" method="post">
+		<label for="login">Login into an account as a User !!</label>
+		<input type="text" id="user_id" name="user_id" placeholder="Enter your userid :">
+        <input type="text" id="password" name="password" placeholder="Enter your password :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/user_signup" method="post">
+		<label for="add user">Register a new user ...</label>
+		<input type="text" id="q51" name="q51" placeholder="Enter your userid :">
+		<input type="text" id="q52" name="q52" placeholder="Enter your Name :">
+		<input type="text" id="q53" name="q53" placeholder="Enter your password :">
+		<input type="text" id="q54" name="q54" placeholder="Enter your Email ID :">
+		<input type="text" id="q55" name="q55" placeholder="Enter your Address :">
+		<input type="text" id="q56" name="q56" placeholder="Enter your pincode :">
+		<input type="text" id="q57" name="q57" placeholder="Enter your Phone Number :">
+		<input type="submit" value="Enter">
+	</form>
+</body>
+</html>

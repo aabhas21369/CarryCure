@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma Application v0.0.0.3</title>
+	<style>
+		body {
+			background-color: #d6b1b1;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: rgb(36, 35, 35);
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+			background-color: rgb(249, 223, 223);
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgb(159, 150, 150);
+		}
+		input[type=text], input[type=number] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px -10px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fefbfb;
+		}
+		input[type=submit] {
+			background-color: rgb(49, 27, 27);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: rgb(89, 77, 77);
+		}
+	</style>
+</head>
+<body>
+	<h1>Pharma Application v0.0.0.3</h1>
+    <center><h3>Seller Page</h3></center>
+	<form action="/add" method="post">
+		<label for="add product">Add a new product and update it's inventory ...</label>
+		<input type="text" id="p0" name="p0" placeholder="Enter the product ID of the new product you want to add :">
+		<input type="text" id="p1" name="p1" placeholder="Enter the product name :">
+		<input type="text" id="p2" name="p2" placeholder="Enter your brand :">
+		<input type="text" id="p3" name="p3" placeholder="Enter info :">
+		<input type="text" id="p4" name="p4" placeholder="Enter constitutents :">
+		<input type="number" id="p5" name="p5" placeholder="Enter price :">
+		<input type="text" id="p6" name="p6" placeholder="Enter category id of given product :">
+		<input type="number" id="p7" name="p7" placeholder="Enter inventory :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/update" method="post">
+		<label for="update product">Update the price and inventory of an already exisiting product ...</label>
+		<input type="text" id="pid2" name="pid2" placeholder="Enter the product ID of the product you want to update :">
+		<input type="number" id="price" name="price" placeholder="Enter the new price :">
+		<input type="number" id="inventory" name="inventory" placeholder="Enter the new inventory :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/delete" method="post">
+		<label for="delete product">Remove a product</label>
+		<input type="text" id="pid3" name="pid3" placeholder="Enter the product ID of the product you want to remove :">
+		<input type="submit" value="Enter">
+	</form>
+</body>
+</html>

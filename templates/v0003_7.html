@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma Application v0.0.0.3</title>
+	<style>
+		body {
+			background-color: #d6b1b1;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: rgb(36, 35, 35);
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+			background-color: rgb(249, 223, 223);
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgb(159, 150, 150);
+		}
+		input[type=text], input[type=number] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px -10px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fefbfb;
+		}
+		input[type=submit] {
+			background-color: rgb(49, 27, 27);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: rgb(89, 77, 77);
+		}
+	</style>
+</head>
+<body>
+	<h1>Pharma Application v0.0.0.3</h1>
+    <center><h3>User Page - Find a Product !!</h3></center>
+	<form action="/query1" method="post">
+		<label for="pincode">Find whether a seller is available at your pincode or not ? </label>
+		<input type="text" id="pincode" name="pincode" placeholder="Enter your pincode :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query2" method="post">
+		<label for="product in price">Get a list of products within a certain price ...</label>
+		<input type="number" id="min_price" name="min_price" placeholder="Enter the Minimum price :">
+		<input type="number" id="max_price" name="max_price" placeholder="Enter the Maximum price :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query4" method="post">
+		<label for="q3">Show a list of products with there prices currently available... </label>
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query3" method="post">
+		<label for="q3">Show a list of products with there prices after applying a given coupon currently available... (Sample Query : 584)</label>
+		<input type="text" id="q3" name="q3" placeholder="Enter your Coupon :">
+		<input type="submit" value="Enter">
+	</form>
+</body>
+</html>

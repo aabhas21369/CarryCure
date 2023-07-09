@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma Application v0.0.0.2</title>
+	<style>
+		body {
+			background-color: #d6b1b1;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: rgb(36, 35, 35);
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+			background-color: rgb(249, 223, 223);
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgb(159, 150, 150);
+		}
+		input[type=text], input[type=number] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px -10px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fefbfb;
+		}
+		input[type=submit] {
+			background-color: rgb(49, 27, 27);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: rgb(89, 77, 77);
+		}
+	</style>
+</head>
+<body>
+	<h1>Pharma Application v0.0.0.1</h1>
+    <center><h3>Trying mySQL connection for 5 sample OLAP queries</h3></center>
+	<form action="/query1" method="post">
+		<label for="q1">To check whether a particular product is currently available in stock at a particular pincode... (Note : Sample Query - 22342342, tdab) </label>
+		<input type="text" id="q1" name="q1" placeholder="Enter your Pincode :">
+		<input type="text" id="q1b" name="q1b" placeholder="Enter the Product Name :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query2" method="post">
+		<label for="q2">Get the product name, it's category and price for an item in a particular order... (Sample Query : 1248839)</label>
+		<input type="text" id="q2" name="q2" placeholder="Enter the Order ID :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query3" method="post">
+		<label for="q3">Show a list of products with there prices after applying a given coupon... (Sample Query : 584)</label>
+		<input type="text" id="q3" name="q3" placeholder="Enter your Coupon :">
+		<input type="submit" value="Enter">
+	</form>
+	<form action="/query4" method="post">
+		<label for="q4">Find a list of pincodes where we have users but no sellers...</label>
+		<input type="submit" id = "q4" value="Enter">
+	</form>
+	<form action="/query5" method="post">
+		<label for="q4">Get the average price of an item within a particular category.. (Sample Query : rvrr).</label>
+		<input type="text" id="q5" name="q5" placeholder="Enter the Category :">
+		<input type="submit" value="Enter">
+	</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharma Application v0.0.0.3</title>
+	<style>
+		body {
+			background-color: #d6b1b1;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: rgb(36, 35, 35);
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+			background-color: rgb(249, 223, 223);
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgb(159, 150, 150);
+		}
+		input[type=text], input[type=number] {
+			width: 100%;
+			padding: 10px;
+			margin: 5px -10px;
+			border: none;
+			border-radius: 3px;
+			background-color: #fefbfb;
+		}
+		input[type=submit] {
+			background-color: rgb(49, 27, 27);
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: rgb(89, 77, 77);
+		}
+	</style>
+</head>
+<body>
+	<h1>Pharma Application v0.0.0.3</h1>
+    <center><h3>User Page : Buy a Product</h3></center>
+	<form action="/buy" method="post">
+		<label for="buy product">Buy a new product ...</label>
+		<input type="text" id="p0" name="p0" placeholder="Enter product name: ">
+		<input type="text" id="p1" name="p1" placeholder="Enter delivery address: ">
+		<input type="text" id="p2" name="p2" placeholder="Enter mode of payment: ">
+		<input type="text" id="p3" name="p3" placeholder="Enter user ID: ">
+		<input type="text" id="p4" name="p4" placeholder="Enter coupon ID (if applicable): ">
+		<input type="submit" value="Enter">
+	</form>
+</body>
+</html>
