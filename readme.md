@@ -1,4 +1,4 @@
-I have made a complete Pharmacy Database and Application System using front-end on HTML, CSS and back-end on Python and mySQL with using Flask Connections.
+We have made a complete Pharmacy Database and Application System using front-end on HTML, CSS and back-end on Python and mySQL with using Flask Connections.
 The v0001 and v0002 are for Deadline 5 and v0003 is for deadline 6.
 To run the application on a develpement server,
 Go to terminal and EXPORT FLASK_APP=v0003.py and FLASK RUN
